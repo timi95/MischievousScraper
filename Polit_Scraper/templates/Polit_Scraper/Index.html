@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+ {% load staticfiles %}
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title> Scraping from BBC politics</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'Polit_Scraper/style.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'Polit_Scraper/w3.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'Polit_Scraper/w3pro.css' %}" />
+    </head>
+    <body>
+        <div class="main-container w3-bar w3-black">
+            <div class="head-container">
+                <h1> Scraper Index </h1> 
+            </div>
+            <div class="data-container-1 w3-bar-item w3-hover-red"> 
+                <p>Jeremy Corbyn: {{ Name1 }} </p>
+            </div>
+            <div class="data-container-2 w3-bar-item w3-hover-blue">
+                <p>Theresa May: {{ Name2 }}</p>
+            </div>
+        </div>
+    </body>            
+</html>

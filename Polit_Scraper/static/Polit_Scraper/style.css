@@ -1,0 +1,20 @@
+.main-container {
+    display: flex;
+}
+
+body {
+    background-color: aqua;
+}
+
+.head-container { 
+    display: flex;
+    /*flex-direction:column-reverse;
+    align-items: flex-end;
+    justify-content: space-between;*/
+    justify-content: space-between;
+}
+
+.data-container-1 div, .main-container div{
+    border: 1px rgb(124, 112, 113) solid;
+    padding: 10px;
+}
