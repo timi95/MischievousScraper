@@ -5,7 +5,7 @@
 body {
     background-color: aqua;
 }
-
+p { word-break: break-all } /* text wrap solution maybe */
 .head-container { 
     display: flex;
     /*flex-direction:column-reverse;
@@ -17,4 +17,15 @@ body {
 .data-container-1 div, .main-container div{
     border: 1px rgb(124, 112, 113) solid;
     padding: 10px;
+}
+
+.frame-container div{
+    display: flex;
+    justify-content: flex-start;
+    align-self: center; 
+}
+.code-container div{
+    display: flex;
+    justify-content: right;
+    align-self: flex-start; 
 }

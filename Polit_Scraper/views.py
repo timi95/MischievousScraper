@@ -25,7 +25,7 @@ def NameFetch1(request):
         if word == Theresa: #or word == May:
             count_may+=1    
 
-    data_dic = {'Name1': count_corb, 'Name2': count_may}
+    data_dic = {'Name1': count_corb, 'Name2': count_may, 'Code': soup}
     return render(request,"Polit_Scraper/Index.html", context= data_dic)
 
 
